@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promoção de Ovo de Páscoa</title>
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>🍫 Ovo de Páscoa Artesanal</h1>
+    <p>Feito com chocolate belga e muito carinho!</p>
+  </header>
+
+  <section class="produto">
+    <img src="src/img/ovo-de-pascoa-de-chocolate-com-frutas-vermelhas.webp" alt="Ovo de Páscoa artesanal" class="imagem-produto">
+    <div class="detalhes">
+      <h2>Ovo de Páscoa 350g</h2>
+      <p>Recheado com brigadeiro gourmet e decorado à mão.</p>
+      <p class="preco">R$ 49,90</p>
+      <button onclick="mostrarPix()">Comprar Agora</button>
+
+      <!-- Área oculta para PIX -->
+      <div id="pix-area" style="display:none; margin-top:20px; text-align:center;">
+        <h3>Pagamento via PIX</h3>
+        <p>Escaneie o QR Code abaixo no seu app bancário:</p>
+        <img src="src/img/pix_pascoa_contente_qr (1).png" alt="QR Code PIX" class="qrcode">
+        <p>Ou copie a chave PIX: <strong id="chavePix">pascoacontente.vendas@pix.com</strong></p>
+        <button onclick="copiarPix()">Copiar Chave PIX</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Delícias da Páscoa - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="src/js/script.js"></script>
+</body>
+</html>
+
